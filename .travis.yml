@@ -1,0 +1,16 @@
+language: java
+branches:
+  only:
+    - master
+    - Develop
+notifications:
+  email:
+    - murugesm@indiana.edu
+    - rraavi@indiana.edu
+    - srameshv@indiana.edu
+    - jbhalla@indiana.edu
+jdk:
+  - oraclejdk8
+sudo: false
+install: true
+script: cd "core/java/stormClustering/" && mvn clean install -DskipTests=true
