@@ -3,6 +3,7 @@ branches:
   only:
     - master
     - Develop
+    - /feature/feature-9-CICD
 notifications:
   email:
     - murugesm@indiana.edu
