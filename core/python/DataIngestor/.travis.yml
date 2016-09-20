@@ -13,9 +13,6 @@ install: true
 
 before_script:
   - pip install virtualenvwrapper
-  - cd FlaskModule
-  - mkdir ~/.virtualenvs
-  - . venv/bin/activate
   - pip install unittests
   - pip install Flask
 
@@ -23,4 +20,4 @@ script: unittest
 
 notifications:
   email:
-    - kgundlup@umail.iu.edu
+    - srameshv@indiana.edu
