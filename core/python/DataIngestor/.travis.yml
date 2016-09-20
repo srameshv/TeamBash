@@ -1,0 +1,26 @@
+language: python
+
+python:
+  - "2.7"
+
+branches:
+  only:
+    - feature/feature-3-data-ingestor
+
+sudo: false
+
+install: true
+
+before_script:
+  - pip install virtualenvwrapper
+  - cd FlaskModule
+  - mkdir ~/.virtualenvs
+  - . venv/bin/activate
+  - pip install unittests
+  - pip install Flask
+
+script: unittest
+
+notifications:
+  email:
+    - kgundlup@umail.iu.edu
